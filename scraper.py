@@ -1,11 +1,3 @@
-# Data Collection Pipeline
-> The Data Collection Pipeline is an industry level project that uses Python code to control a website as if someone is using it and extracts information from it and stores it. 
-
-## Web-Scraping
-In this milestone, I created class that scrapes thorough the MyProtein website as I use this website to order my whey protein from. It uses methods that open the page, closes the pop up, accepts cookies and clicks on a link in the website. This is done using a library called Selenium. Selenium is a tools that lets you use code to automatically control a web brower and find elements in it's html code to run certain actions. In order to use it, you need to install the driver for the web broweser. Since I am using Google Chrome, I installed the Chromerdriver. Then I created an another method to extract the urls for the products displayed on the website that was inside a container and store it in my `self.all_links` list which I initaialised in my `__init__` method. This extraction was done using a library called BeautifulSoup which is another tool to scrape a website.
-
-
-```python
 from selenium import webdriver 
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -59,4 +51,6 @@ if __name__ == "__main__":
     shop.get_data()
 
 time.sleep(8)
-```
+
+
+
